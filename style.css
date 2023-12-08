@@ -35,23 +35,30 @@
     width: 120px;
     height: 20px;
     border-radius: 35px;
+    text-transform: uppercase;
     background-color: #100224;
     color: #dfb6b2;
-    font-size: 20px;
+    font-size: 14px;
+    font-family: poppins;
     text-align: center;
     padding: 15px;
-    filter: drop-shadow(2px 2px 2px 12px black);
+    /* filter: drop-shadow(2px 2px 2px 12px black); */
     border: 4px solid #dfb6b2;
+    cursor: pointer;
+}
+
+.wrapper p:visited {
+    color: #100224;
 }
 
 .timercircle {
     width: 200px;
     height: 200px;
     padding: 1rem;
-    background: cornflowerblue;
+    background: #100224;
     border-radius: 50%;
     text-align: center;
-    border: 10px solid wheat;
+    border: 6px solid #dfb6b2;
 }
 
 .p {
@@ -63,8 +70,34 @@
 }
 
 .timercircle p {
-    font-size: 20px;
+    font-size: 26px;
     font-family: poppins;
-    color: #000;
+    color: #dfb6b2;
 
+}
+
+.buttons {
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.buttons span {
+    font-size: 14px;
+    font-family: poppins;
+    color: #dfb6b2;
+    margin: 0 10px;
+}
+
+.buttons button {
+    width: 100px;
+    height: 40px;
+    text-transform: uppercase;
+    border-radius: 35px;
+    border: 4px solid #dfb6b2;
+    background: #100224;
+    color: #dfb6b2;
+    padding: 0 5px;
+    padding: 5px;
 }
