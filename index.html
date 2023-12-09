@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Promodoro Timer</title>
+    <title>Pomodoro Timer</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
@@ -13,28 +13,32 @@
 <body>
     <div class="container">
         <div class="heading">
-            <h1>Promodoro Timer</h1>
+            <h1>Pomodoro Timer</h1>
         </div>
-        <div class="wrapper">
-            <p id="promodoro">Promodoro</p>
-            <p id="Shortbreak">Short Break</p>
-            <p id="longbreak">Long Break</p>
+        <div class="modes">
+            <p class="mode" data-time="1500">Pomodoro</p>
+            <p class="mode" data-time="300">Short Break</p>
+            <p class="mode" data-time="900">Long Break</p>
         </div>
-        <div class="promodoro">
+        <div class="pomodoro">
             <div class="timercircle">
-                <div class="p">
-                    <p id="minutes"></p>
-                    <p id="">:</p>
-                    <p id="Second"></p>
+                <div class="pomodoro__time">
+                    <p id="minutes">25</p>
+                    <p>:</p>
+                    <p id="seconds">00</p>
                 </div>
             </div>
         </div>
         <div class="buttons">
-            <button><span>Start</span><i class="fa-solid fa-play"></i></button>
-            <button><span>Repeat</span><i class="fa-solid fa-repeat"></i></button>
+            <button id="start"><span>Start</span><i class="fas fa-play"></i></button>
+            <button id="reset"><span>Repeat</span><i class="fas fa-redo"></i></button>
         </div>
+        <div class="get-started">
+            <p>Please select a mode</p>
+        </div>
+        <audio src="your-audio-file.mp3"></audio>
     </div>
-    <script src="./app.js"></script>
+    <script src="app.js"></script>
 </body>
 
 </html>

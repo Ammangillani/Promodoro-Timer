@@ -24,14 +24,14 @@
 
 }
 
-.wrapper {
+.modes {
     width: 40%;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
 }
 
-.wrapper p {
+.modes p {
     width: 120px;
     height: 20px;
     border-radius: 35px;
@@ -46,12 +46,12 @@
     cursor: pointer;
 }
 
-.wrapper p:hover {
+.modes p:hover {
     background-color: #c38eb4;
     color: #190019;
 }
 
-.wrapper p:active {
+.modes p:active {
     background-color: #c38eb4;
     color: #100224;
     scale: 1.2;
@@ -75,8 +75,12 @@
     padding: 0 10px;
 }
 
-.timercircle p {
-    font-size: 26px;
+.pomodoro__time {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
     font-family: poppins;
     color: #dfb6b2;
 
