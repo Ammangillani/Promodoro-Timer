@@ -22,7 +22,7 @@
         </div>
         <div class="pomodoro">
             <div class="timercircle">
-                <div class="pomodoro__time">
+                <div class="pomodoro__time" onclick="clickstartTimer()">
                     <p id="minutes">25</p>
                     <p>:</p>
                     <p id="seconds">00</p>
@@ -31,10 +31,10 @@
         </div>
         <div class="buttons">
             <button id="start"><span>Start</span><i class="fas fa-play"></i></button>
-            <button id="reset"><span>Repeat</span><i class="fas fa-redo"></i></button>
+            <button id="reset"><span>Reset</span><i class="fas fa-redo"></i></button>
         </div>
         <div class="get-started">
-            <p>Please select a mode</p>
+            <p>Please select a mode <i class="fa-solid fa-exclamation"></i></p>
         </div>
         <audio src="your-audio-file.mp3"></audio>
     </div>

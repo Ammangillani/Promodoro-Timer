@@ -31,6 +31,21 @@ function startTimer() {
   if (selectedTime) {
     // Start the timer only if a mode is selected
     timer(selectedTime);
+    active.style.backgroundColor = "red";
+  } else {
+    // Inform the user to select a mode
+    getStartedMessage.style.display = "block";
+  }
+}
+
+let active = document.querySelector(".timercircle");
+
+function clickstartTimer() {
+  // console.log("heloo");
+  if (selectedTime) {
+    // Start the timer only if a mode is selected
+    timer(selectedTime);
+    active.style.backgroundColor = "red";
   } else {
     // Inform the user to select a mode
     getStartedMessage.style.display = "block";
@@ -41,7 +56,7 @@ function resetTimer() {
   // Clear the interval and reset the selected time
   clearInterval(countdown);
   selectedTime = 0;
-
+  active.style.backgroundColor = "#100224";
   // Display the selected time (0:00)
   displayTimeLeft(selectedTime);
 
